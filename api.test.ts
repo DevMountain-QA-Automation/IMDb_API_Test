@@ -1,6 +1,6 @@
 // For API collection go to the following link: https://www.getpostman.com/collections/6ad00d81a90d8da106e1
 // Enter the following address in the postman GET request input field: https://imdb-api.com/en/API/SearchTitle/k_xp78bur3/Black Widow
-// After yoiu enter adress into GET input field copy and past the code below in the "Tests" tab and click the "Send" button
+// After you enter the address into GET input field copy and paste the code below in the "Tests" tab and click the "Send" button
 
 pm.test("Status code is 200", () => { 
     pm.response.to.have.status(200); 
