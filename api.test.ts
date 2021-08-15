@@ -14,16 +14,16 @@ pm.test("Results contains movie name (Black Widow)", () => {
             movieFound.push(pos.title)
         }
     })
-    pm.expect(movieFound).to.not.equal(0)        
+    pm.expect(movieFound.length).to.not.equal(0)        
 })
 
 pm.test("Results contains movie release date (2021)", () => {
     var jsonDoc = pm.response.json()
     var movieFound = []
     jsonDoc.results.forEach( pos => {
-        if(pos.description === "2021"){
-            movieFound.push(pos.title)
+        if(pos.description === "(2021)"){
+            movieFound.push(pos.description)
         }
     })
-    pm.expect(movieFound).to.not.equal(0)        
+    pm.expect(movieFound.length).to.not.equal(0)        
 })
